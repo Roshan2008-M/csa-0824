@@ -1,0 +1,19 @@
+num=int(input("enter a number"))
+if num%2==0:
+    print("It is even number",num)
+else:
+    print("It is odd number",num)
+
+
+start=int(input("enter a  first number:"))
+end=int(input("enter a  last number:"))
+
+sum_even=0
+sum_odd=0
+for i in range(start,end+1):
+    if i%2==0:
+        sum_even+=i
+    else:
+        sum_odd+=i
+print("sum of the even number:",sum_even)
+print("sum of the odd number:",sum_odd)
