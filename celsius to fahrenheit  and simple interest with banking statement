@@ -1,0 +1,24 @@
+c=int(input("enter a temperature:"))
+f=(c*9/5)+32
+print("enter a celesius to fahrenheit:",f)
+
+p=int(input("enter a number:"))
+q=int(input("enter a number:"))
+r=int(input("enter a number:"))
+
+n=p*q*r/100
+print("enter a simple intrest:",n)
+
+
+
+p=int(input("enter a principle amount:"))
+n=int(input("enter a number of years:"))
+sc=input("senior citizen YES/NO:")
+g=input("enter a MALE OR FEMALE:")
+if sc=='y'and g=='m':
+    print("si=",(p*n*12)/100)
+elif sc=='y'and g=='f':
+    print("si=",(p*n*15)/100)
+else:
+    print("si=",(p*n*10)/100)
+
