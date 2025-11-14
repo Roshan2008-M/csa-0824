@@ -1,0 +1,7 @@
+num=int(input("enter a number"))
+if num%5==0:
+    print("it is divsible by 5:",num)
+elif num%3==0:
+    print("it is divsible by 3:",num)
+else:
+    print("it is anthor table")
