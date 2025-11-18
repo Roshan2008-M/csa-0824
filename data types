@@ -1,0 +1,58 @@
+#union two sets
+set1={1,2,3,4,5}
+set2={6,7,8}
+union_set=set1|set2
+print(union_set)
+
+#sort a list in descending order
+num=[1,2,3,4,5,6,7,8,9,10]
+num.sort(reverse=True)
+print(num)
+
+# Python program to remove all occurrences of a specified element from a list
+def remove_occurrences(lst,element):
+  return[item for item in lst if item!=element]
+orginal_list=[1,2,3,4,5,6,7]
+element_to_remove=4
+updated_list=remove_occurrences(orginal_list,element_to_remove)
+print("orginal list=",orginal_list)
+print("updated list=",updated_list)
+
+#intersection of two sets
+set1={1,2,3,4,5}
+set2={2,6,7,8}
+intersection_set=set1&set2
+print(intersection_set)
+
+# the length of a string
+n=(input())
+lengt=len(n)
+print("the lenght of the string is:",lengt)
+
+ #concatenate two strings
+string1=(input("enter a string:"))
+string2=(input("enter a string:"))
+result=string1+string2
+print("the concatenate string is:",result)
+
+#convert a tuple to a list
+tuple=(1,2,3,4,5,6)
+list=list(tuple)
+print("orginal value:",tuple)
+print("convert value:",list)
+
+# convert a list to a tuple
+list=[1,2,3,4,5,6]
+tuple=tuple(list)
+print("orginal value:",list)
+print("convert value:",tuple)
+
+#convert a string to an integer
+str="1234"
+num=int(str)
+print(num)
+
+# convert a string to a float
+str="12.22"
+num=float(str)
+print(num)
