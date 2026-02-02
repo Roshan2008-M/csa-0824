@@ -1,0 +1,253 @@
+#prime or not a prime number:
+num = int(input("Enter a number: "))
+
+count = 0
+for i in range(1, num + 1):
+    if num % i == 0:
+        count += 1
+
+if count==2:
+    print("Prime Number")
+else:
+    print("Not a Prime Number")
+
+#composite number:
+num=int(input("enter a number:"))
+count=0
+for i in range(1,num+1):
+    if num%i==0:
+        count+=1
+if(count>2):
+    print("it is composite number")
+else:
+    print("not a composite number")
+
+#sum of digits:
+num=int(input("enter a number:"))
+sum=0
+temp=num
+while temp>0:
+    digit=temp%10
+    sum+=digit
+    temp=temp//10
+print("sum of the digits:",sum)
+
+#reverse number or not:
+num=int(input("enter a number:"))
+rev=0
+temp=num
+while temp>0:
+    digit=temp%10
+    rev=rev*10+digit
+    temp=temp//10
+print("reverse number:",rev)
+
+#palindrome or not a palindrome:
+
+num=int(input("enter a number:"))
+rev=0
+temp=num
+while temp>0:
+    digit=temp%10
+    rev=rev*10+digit
+    temp=temp//10
+if(num==rev):
+    print("it is palindrome")
+else:
+    print("it is not a palindrome")
+
+#leap year
+year=int(input("enter a number:"))
+if year%400==0 and year%100!=0 or year%4==0:
+    print("it is leap year")
+else:
+    print("it is not a leap year")
+
+#calculate the nCr to find n and r:
+import math
+n=int(input("enter a first number:"))
+r=int(input("enter a second number:"))
+nCr=math.comb(n,r)
+print("calculate n and r:",nCr)
+
+#perfect number:
+num= int(input("enter a number:"))
+sum=0
+for i in range(1,num+1):
+    if num%i==0:
+        sum+=i
+if(sum==num):
+    print("it is perfect number")
+else:
+    print("it is not a perfect number")
+
+#armstrong number:
+
+num = int(input("Enter a number: "))
+temp = num
+digits = len(str(num))
+sum = 0
+
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** digits
+    temp //= 10
+
+if sum == num:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+
+#pattern:Rigth angle triangle:
+rows=int(input("enter a number of rows:"))
+for i in range(1,rows+1):
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()
+
+#pattern:inverted right triangle:
+rows=int(input("enter a number of rows:"))
+for i in range(rows,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+
+#pattern:floyd's triangle:
+rows=int(input("enter a number of rows:"))
+num=1
+for i in range(1,rows+1):
+    for j in range(1,i+1):
+        print(num,end=" ")
+        num+=1
+    print()    
+
+#pattern:square:-
+n = int(input("Enter size: "))
+
+for i in range(n):
+    for j in range(n):
+        print("*", end=" ")
+    print()
+#pattern:number square
+
+n = int(input("Enter size: "))
+
+for i in range(n):
+    for j in range(1, n + 1):
+        print(j, end=" ")
+    print()
+#pattern:hollow square:
+
+n = int(input("Enter size: "))
+
+for i in range(n):
+    for j in range(n):
+        if i == 0 or i == n-1 or j == 0 or j == n-1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+#pattern:pyramid pattern
+
+n = int(input("Enter height: "))
+
+for i in range(1, n + 1):
+    print(" " * (n - i), end="")
+    print("* " * i)
+#pattern:number right angle triangle
+
+n = int(input("Enter height: "))
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+#count a words and letters of the sentence:
+
+    text = input("Enter a string: ")
+word_count = len(text.split())
+print("Number of words:", word_count)
+
+
+sentence = input("Enter a sentence: ")
+print("Total characters (including spaces):", len(sentence))
+
+#reverse of words and sentence in a string:
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+reversed_sentence = " ".join(words[::-1])
+
+print("Reversed sentence:", reversed_sentence)
+
+
+sentence = input("Enter a sentence: ")
+reversed_sentence = sentence[::-1]
+print("Reversed sentence:", reversed_sentence)
+
+
+# palindrome or not in a string:
+
+text = input("Enter a string: ")
+
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+#minimum and maximum number:
+
+n = int(input("Enter how many numbers: "))
+
+# Initialize min and max with None
+minimum = None
+maximum = None
+
+for i in range(n):
+    num = float(input(f"Enter number {i+1}: "))
+    
+    if minimum is None or num < minimum:
+        minimum = num
+    if maximum is None or num > maximum:
+        maximum = num
+
+print("Minimum number:", minimum)
+print("Maximum number:", maximum)
+
+# matrix addition
+
+# Input size of matrices
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+# Initialize matrices
+matrix1 = []
+matrix2 = []
+
+print("Enter elements of first matrix:")
+for i in range(rows):
+    row = list(map(int, input().split()))
+    matrix1.append(row)
+
+print("Enter elements of second matrix:")
+for i in range(rows):
+    row = list(map(int, input().split()))
+    matrix2.append(row)
+
+# Matrix addition
+# Input size of matrices
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+# Initialize matrices
+matrix1 = []
+matrix2 = []
+
+print("Enter elements of first matrix:")
+for i in range(rows):
+    row = list(map(int, input().split()))
+    matrix1.append(row)
+
+print("Enter elements of second matrix:")
+for i in range(rows):
+    row = list(map(int, input().split()))
+    matrix2.append(row)
